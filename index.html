@@ -48,7 +48,7 @@
                 <h1> Weather App</h1>
                 <form onsubmit="calculate(); return false">
                     <label for="temp"> Enter City Temperature</label>
-                    <input type="text" id="temp" placeholder="enter"><br>
+                    <input type="number" id="temp" placeholder="enter"><br>
                     <button type="submit" class="btn btn-primary rounded mt-3">Check Weather</button>
                 </form>
                   <p id="result"></p>
@@ -61,25 +61,26 @@
     
            function calculate(){
             let temp = +document.querySelector("#temp").value;
-            if (temp > 30)
+            if (temp > 30){
                 document.querySelector("#result").innerHTML = "Its hot";
-       else if 
-               (temp > 25) 
+            
+            } else if (temp > 25) {
                  document.querySelector("#result").innerHTML = "Its pleasent outside";
-       else if 
-               (temp > 15) 
+              }
+       else if (temp > 15) {
                  document.querySelector("#result").innerHTML = "Its cold";
-       else if 
-               (temp < 10) 
+                }
+       else if (temp > 10) {
                  document.querySelector("#result").innerHTML = "Its too cold outside";
-       else if 
-               (temp < 0) 
+       }
+       else if (temp > 1) {
                  document.querySelector("#result").innerHTML = "You need double jacket";
-        else  
+                 }
+        else  {
                  document.querySelector("#result").innerHTML = "Its freezing outside";
-        
-
+        }
     }
+    
 
            
             
