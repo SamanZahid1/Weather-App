@@ -39,19 +39,20 @@
     </style>
 </head>
 <body>
-    <video autoplay="" muted="" loop="" id="myVideo">
-        <source src="weather.mp4" type="video/mp4">
-    </video>
+   
     <div class="container d-block justify-content-center">
         <div class="row">
-            <div class="col-md-12 weather">
+            <div class="col-md-6 weather">
                 <h1> Weather App</h1>
                 <form onsubmit="calculate(); return false">
                     <label for="temp"> Enter City Temperature</label>
                     <input type="number" id="temp" placeholder="enter"><br>
                     <button type="submit" class="btn btn-primary rounded mt-3">Check Weather</button>
                 </form>
-                  <p id="result"></p>
+                  
+              </div>
+              <div class="col-md-6">
+                <p id="result"></p>
               </div>
             </div>
        </div>
@@ -62,19 +63,19 @@
            function calculate(){
             let temp = +document.querySelector("#temp").value;
             if (temp > 30){
-                document.querySelector("#result").innerHTML = "Its hot";
+                document.querySelector("#result").innerHTML = "<div><img src=hot.jpg><br></div> Its hot";
             
             } else if (temp > 25) {
-                 document.querySelector("#result").innerHTML = "Its pleasent outside";
+                 document.querySelector("#result").innerHTML = "<div><img src=pleasent.jpg><br></div>Its pleasent outside";
               }
        else if (temp > 15) {
-                 document.querySelector("#result").innerHTML = "Its cold";
+                 document.querySelector("#result").innerHTML = "<div><img src=cold.png><br></div> Its cold";
                 }
        else if (temp > 10) {
-                 document.querySelector("#result").innerHTML = "Its too cold outside";
+                 document.querySelector("#result").innerHTML = "<div><img src=cold2.png><br></div> Its too cold outside";
        }
        else if (temp > 1) {
-                 document.querySelector("#result").innerHTML = "You need double jacket";
+                 document.querySelector("#result").innerHTML = "<div><img src=coldd.png><br></div> You need double jacket";
                  }
         else  {
                  document.querySelector("#result").innerHTML = "Its freezing outside";
