@@ -10,6 +10,7 @@
        body{
         background-image: url('background.jpg');
         background-size: cover;
+        background-repeat: no-repeat !important;
        }
         .container{
             position:relative;
@@ -62,22 +63,22 @@
            function calculate(){
             let temp = +document.querySelector("#temp").value;
             if (temp > 30){
-                document.querySelector("#result").innerHTML = "<div><img src=hot.jpg><br></div> Its hot";
+                document.querySelector("#result").innerHTML = "<div><img src=hot.png><br></div> It's hot";
             
             } else if (temp > 25) {
-                 document.querySelector("#result").innerHTML = "<div><img src=pleasent.jpg><br></div>Its pleasent outside";
+                 document.querySelector("#result").innerHTML = "<div><img src=pleasent.jpg><br></div>It's pleasent outside";
               }
        else if (temp > 15) {
-                 document.querySelector("#result").innerHTML = "<div><img src=cold.png><br></div> Its cold";
+                 document.querySelector("#result").innerHTML = "<div><img src=cold.png><br></div> It's cold";
                 }
        else if (temp > 10) {
-                 document.querySelector("#result").innerHTML = "<div><img src=cold2.png><br></div> Its too cold outside";
+                 document.querySelector("#result").innerHTML = "<div><img src=cold2.png><br></div> It's too cold outside";
        }
        else if (temp > 1) {
                  document.querySelector("#result").innerHTML = "<div><img src=coldd.png><br></div> You need double jacket";
                  }
         else  {
-                 document.querySelector("#result").innerHTML = "<div><img src=freez.jpg><br></div> Its freezing outside";
+                 document.querySelector("#result").innerHTML = "<div><img src=freez.png><br></div> It's freezing outside";
         }
     }
     
