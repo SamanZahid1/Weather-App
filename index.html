@@ -21,6 +21,9 @@
         .weather {
             padding: 88px 0;
         }
+        h1{
+            color: red;
+        }
         label {
             font-size: 20px;
             display: block;
@@ -60,20 +63,19 @@
             let temp = +document.querySelector("#temp").value;
             if (temp > 30)
                 document.querySelector("#result").innerHTML = "Its hot";
-              else if 
-            (temp > 25) 
+       else if 
+               (temp > 25) 
                  document.querySelector("#result").innerHTML = "Its pleasent outside";
-                 else if 
-            (temp > 15) 
+       else if 
+               (temp > 15) 
                  document.querySelector("#result").innerHTML = "Its cold";
-                 else if 
-            (temp < 10) 
+       else if 
+               (temp < 10) 
                  document.querySelector("#result").innerHTML = "Its too cold outside";
-                 else if 
-            (temp < 0) 
+       else if 
+               (temp < 0) 
                  document.querySelector("#result").innerHTML = "You need double jacket";
-                 else if 
-            (temp > -10) 
+        else  
                  document.querySelector("#result").innerHTML = "Its freezing outside";
         
 
