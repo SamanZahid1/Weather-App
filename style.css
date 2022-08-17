@@ -1,0 +1,29 @@
+body{
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat !important;
+   }
+    .container{
+        position:relative;
+        top: 50px;
+        text-align: center;
+
+    }
+    .weather {
+        padding: 88px 0;
+    }
+    h1{
+        color: black;
+        font-weight: 900;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    label {
+        font-size: 20px;
+        display: block;
+    }
+   
+    p{
+        font-size: 35px;
+        color: yellow;
+        font-weight: 900;
+    }
